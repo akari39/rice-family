@@ -8,16 +8,11 @@
 }
 
 .main-text {
-    overflow-y: scroll;
-    height: 400px;
-    padding: 0 230px 0 230px;
-    list-style: none;
-    counter-reset: order;
+    padding: 0 130px 0 130px;
 }
 
-.main-text > li::before {
-    content: counter(order);
-    font-size: 30px;
+.main-text-number {
+    width: 1em;
     color: #FF5D5D;
     vertical-align:top;
     font-family: 'Noto Sans';
