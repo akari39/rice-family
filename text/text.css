@@ -1,13 +1,17 @@
+.p{
+    font-family: 'Noto Sans'
+}
 .main-text {
     overflow-y: scroll;
     height: 400px;
-    padding: 0 130px 0 130px;
+    padding: 0 200px 0 200px;
     list-style: none;
     counter-reset: order;
 }
 
 .main-text > li::before {
     content: counter(order);
+    font-size: 20px;
     color: #FF5D5D;
     counter-increment: order;
     margin-left: -1em;
@@ -18,6 +22,7 @@
 
 .header-text {
     width: 100%;
+    font-size: 40px;
     text-align: center;
     color: #FF5D5D;
 }
