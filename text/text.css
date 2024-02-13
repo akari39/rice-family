@@ -1,3 +1,6 @@
+.p{
+    font-family: 'Noto Sans'
+}
 .main-text {
     padding: 0 130px 0 130px;
 }
@@ -10,6 +13,7 @@
 
 .header-text {
     width: 100%;
+    font-size: 40px;
     text-align: center;
     color: #FF5D5D;
 }
