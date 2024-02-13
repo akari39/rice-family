@@ -1,0 +1,10 @@
+.main-text {
+    overflow-y: scroll;
+    height: 400px;
+    padding: 0 120px 0 120px;
+}
+
+.header-text {
+    width: 100%;
+    text-align: center;
+}
