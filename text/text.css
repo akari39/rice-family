@@ -1,19 +1,11 @@
 .main-text {
-    overflow-y: scroll;
-    height: 400px;
     padding: 0 130px 0 130px;
-    list-style: none;
-    counter-reset: order;
 }
 
-.main-text > li::before {
-    content: counter(order);
+.main-text-number {
+    width: 1em;
     color: #FF5D5D;
-    counter-increment: order;
-    margin-left: -1em;
-    margin-right: 0.5em;
-    text-align: right;
-    direction: rtl;
+    vertical-align:top
 }
 
 .header-text {
