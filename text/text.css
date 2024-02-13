@@ -21,7 +21,8 @@
 .header-text {
     width: 100%;
     font-size: 40px;
-    text-align: center;
+    text-align: left;
     color: #FF5D5D;
     font-family: 'Noto Sans';
+    padding: 0 130px 0 130px;
 }
