@@ -1,6 +1,12 @@
-.p{
-    font-family: 'Noto Sans'
+.main-text-container {
+    height: 100%;
+    overflow-y: scroll;
 }
+
+.main-text-container::-webkit-scrollbar {
+    background-color: transparent;
+}
+
 .main-text {
     padding: 0 130px 0 130px;
 }
@@ -8,7 +14,8 @@
 .main-text-number {
     width: 1em;
     color: #FF5D5D;
-    vertical-align:top
+    vertical-align:top;
+    font-family: 'Noto Sans';
 }
 
 .header-text {
@@ -16,4 +23,5 @@
     font-size: 40px;
     text-align: center;
     color: #FF5D5D;
+    font-family: 'Noto Sans';
 }
