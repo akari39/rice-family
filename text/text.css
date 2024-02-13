@@ -2,9 +2,22 @@
     overflow-y: scroll;
     height: 400px;
     padding: 0 130px 0 130px;
+    list-style: none;
+    counter-reset: order;
+}
+
+.main-text > li::before {
+    content: counter(order);
+    color: #FF5D5D;
+    counter-increment: order;
+    margin-left: -1em;
+    margin-right: 0.5em;
+    text-align: right;
+    direction: rtl;
 }
 
 .header-text {
     width: 100%;
     text-align: center;
+    color: #FF5D5D;
 }
