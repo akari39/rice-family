@@ -4,14 +4,14 @@
 .main-text {
     overflow-y: scroll;
     height: 400px;
-    padding: 0 200px 0 200px;
+    padding: 0 230px 0 230px;
     list-style: none;
     counter-reset: order;
 }
 
 .main-text > li::before {
     content: counter(order);
-    font-size: 20px;
+    font-size: 30px;
     color: #FF5D5D;
     counter-increment: order;
     margin-left: -1em;
@@ -23,6 +23,6 @@
 .header-text {
     width: 100%;
     font-size: 40px;
-    text-align: center;
+    padding: 0 230px 0 230px;
     color: #FF5D5D;
 }
