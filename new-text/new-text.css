@@ -1,0 +1,143 @@
+html {
+    height: 100%;
+}
+
+#left-container {
+    height: 100%;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    background-color: #F2F1F0;
+    color: #5A5858;
+    padding: 18px;
+}
+
+#frame {
+    height: 100%;
+    width: 100%;
+    border-style: solid;
+    border-color: #DEA395;
+    border-width: 4px;
+}
+
+.title-container {
+    position: relative;
+    left: 22px;
+    top: 18px;
+}
+
+.decoration-wave {
+    position: absolute;
+    z-index: -1;
+    top: 80px;
+}
+
+.title {
+    text-wrap: wrap;
+    font-size: 100px;
+}
+
+.circle {
+    height: 197px;
+    width: 197px;
+    background-color: #F0E0DC;
+    border-radius: 50%;
+    z-index: -21;
+    position: absolute;
+    right: 0px;
+}
+
+.nav-home {
+    color: #DEA395;
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+.intro {
+    flex: 1;
+    height: 100%;
+    overflow: scroll;
+    margin-top: 60px;
+    margin-left: 48px;
+}
+
+.intro::-webkit-scrollbar {
+    display: none;
+}
+
+.divider {
+    border-top: 1px solid #979797;
+}
+
+#left-col {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#right-col {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-right: 52px;
+}
+
+.ingredients-container {
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.recipe-container {
+    flex: 1;
+    height: 100%;
+    overflow: scroll;
+    padding-top: 57px;
+    
+}
+
+.recipe-container::-webkit-scrollbar {
+    display: none;
+}
+
+.recipe-table {
+    padding-top: 20px;
+}
+
+.recipe-row {
+    vertical-align: baseline;
+}
+
+.recipe-number {
+    color: #DEA395;
+    font-size: 28px;
+    padding-right: 1rem;
+}
+
+.recipe-text {
+    font-size: 20px;
+}
+
+.row-spacer {
+    width: 100%;
+    flex: 1;
+}
+
+.page-index-container {
+    text-wrap: wrap;
+    background-color: #DEA395;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 71px;
+    padding-left: 71px;
+}
+
+.page-index-row {
+    display: flex;
+}
