@@ -22,7 +22,13 @@ html {
     border-width: 4px;
 }
 
+#nav-back {
+    margin-right: 6px;
+    color: #DEA395;
+}
+
 .title-container {
+    vertical-align: middle;
     position: relative;
     left: 22px;
     top: 18px;
@@ -31,12 +37,14 @@ html {
 .decoration-wave {
     position: absolute;
     z-index: -1;
-    top: 80px;
+    bottom: 65px;
 }
 
 .title {
     text-wrap: wrap;
-    font-size: 100px;
+    font-size: 80px;
+    font-family: "Roboto Serif", serif;
+    font-weight: 500;
 }
 
 .circle {
@@ -52,6 +60,7 @@ html {
 .nav-home {
     color: #DEA395;
     font-size: 32px;
+    font-family: "Roboto Serif", serif;
     margin-top: 20px;
 }
 
@@ -61,6 +70,9 @@ html {
     overflow: scroll;
     margin-top: 60px;
     margin-left: 48px;
+    margin-right: 50px;
+    font-family: "Roboto Serif", serif;
+    font-size: 14px;
 }
 
 .intro::-webkit-scrollbar {
@@ -94,12 +106,22 @@ html {
     padding-right: 20px;
 }
 
+.ingredients-title {
+    font-size: 20px;
+    font-family: "Roboto Serif", serif;
+}
+
+.ingredients-text {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
 .recipe-container {
     flex: 1;
     height: 100%;
     overflow: scroll;
     padding-top: 57px;
-    
 }
 
 .recipe-container::-webkit-scrollbar {
@@ -116,12 +138,21 @@ html {
 
 .recipe-number {
     color: #DEA395;
-    font-size: 28px;
+    font-size: 22px;
     padding-right: 1rem;
+    vertical-align: text-top;
+    font-family: "Roboto Serif", serif;
+}
+
+.recipe-title {
+    margin-bottom: 20px;
+    font-family: "Roboto Serif", serif;
 }
 
 .recipe-text {
     font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
 }
 
 .row-spacer {
@@ -140,4 +171,24 @@ html {
 
 .page-index-row {
     display: flex;
+}
+
+#nav-page-back {
+    color: #DEA395;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#nav-page-forward {
+    color: #DEA395;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.ingredients-item {
+    white-space: nowrap;
 }
