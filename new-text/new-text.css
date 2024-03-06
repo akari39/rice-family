@@ -37,7 +37,7 @@ html {
 .decoration-wave {
     position: absolute;
     z-index: -1;
-    bottom: 65px;
+    bottom: 60px;
 }
 
 .title {
@@ -59,7 +59,7 @@ html {
 
 .nav-home {
     color: #DEA395;
-    font-size: 32px;
+    font-size: 28px;
     font-family: "Roboto Serif", serif;
     margin-top: 20px;
 }
@@ -111,12 +111,6 @@ html {
     font-family: "Roboto Serif", serif;
 }
 
-.ingredients-text {
-    font-size: 18px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-}
-
 .recipe-container {
     flex: 1;
     height: 100%;
@@ -162,6 +156,8 @@ html {
 
 .page-index-container {
     text-wrap: wrap;
+    font-family: "Roboto Serif", serif;
+    font-size: 20px;
     background-color: #DEA395;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -190,5 +186,17 @@ html {
 }
 
 .ingredients-item {
+    width: 100%;
+    overflow: hidden;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+.ingredients-line {
     white-space: nowrap;
+    font-family: monospace;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
 }
