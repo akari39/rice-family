@@ -120,10 +120,6 @@ html {
     margin-bottom: 20px;
 }
 
-.recipe-container::-webkit-scrollbar {
-    display: none;
-}
-
 .recipe-table {
     padding-top: 20px;
 }
