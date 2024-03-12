@@ -65,9 +65,7 @@ html {
 }
 
 .intro {
-    flex: 1;
     height: 100%;
-    overflow: scroll;
     padding-top: 18px;
     padding-bottom: 18px;
     padding-left: 20px;
@@ -103,6 +101,10 @@ html {
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
+    margin-bottom: 36px;
+    flex: 1;
+    height: 100%;
+    overflow: scroll;
 }
 
 .ingredients-title {
@@ -115,6 +117,7 @@ html {
     height: 100%;
     overflow: scroll;
     padding-top: 57px;
+    margin-bottom: 20px;
 }
 
 .recipe-container::-webkit-scrollbar {
