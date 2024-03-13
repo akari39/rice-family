@@ -35,14 +35,16 @@ html {
 }
 
 .decoration-wave {
+    width: 100px;
+    text-align: left;
     position: absolute;
     z-index: -1;
-    bottom: 60px;
+    bottom: 51px;
 }
 
 .title {
     text-wrap: wrap;
-    font-size: 80px;
+    font-size: 54px;
     font-family: "Roboto Serif", serif;
     font-weight: 500;
 }
@@ -116,7 +118,8 @@ html {
     flex: 1;
     height: 100%;
     overflow: scroll;
-    padding-top: 57px;
+    padding-top: 37px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -145,6 +148,7 @@ html {
     font-size: 20px;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
+    padding-bottom: 20px;
 }
 
 .row-spacer {
@@ -202,4 +206,8 @@ html {
     width: 270px;
     height: 270px;
     transform: rotate(2deg);
+}
+
+.material-symbols-outlined {
+    text-decoration: none;
 }
