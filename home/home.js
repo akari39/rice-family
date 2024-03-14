@@ -27,6 +27,7 @@ function onLoad() {
                 document.getElementById("dish-img").src = `../asset/${dishNameWithoutSpaces}.png`;
                 dishCard.onclick = () => {
                     location.href=`../text-pages/${dishNameWithoutSpaces}.html`;
+                    event.stopPropagation();
                 };
             }
             event.stopPropagation();

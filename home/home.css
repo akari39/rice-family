@@ -18,6 +18,9 @@ html {
     margin: 0px;
     display: flex;
     flex-direction: column;
+    background-image: url('../asset/background-pattern.png');
+    background-size: cover;
+    background-repeat: repeat;
 }
 
 #choice-panel {
