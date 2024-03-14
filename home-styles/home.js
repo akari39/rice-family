@@ -1,5 +1,6 @@
 let selectedIngredientId = null;
-let dishes = ["Sushi", "Japanese Curry", "Fried Rice", "Risotto", "Bibimbap", "Ochazuke", "Donburi", "Paella", "Rice Pudding", "Mango Sticky Rice"];
+const dishes = ["Sushi", "Japanese Curry", "Fried Rice", "Risotto", "Bibimbap", "Ochazuke", "Donburi", "Paella", "Rice Pudding", "Mango Sticky Rice"];
+const soundEffect = new Audio("asset/Soundeffect.mp3");
 
 function onLoad() {
     const dishCard = document.getElementById("dish-card");
@@ -12,7 +13,7 @@ function onLoad() {
             if (selectedIngredientId !== null) {
                 const selectedChoicePanelChild = document.getElementById(selectedIngredientId);
                 selectedChoicePanelChild.style.backgroundColor = "transparent";
-                selectedChoicePanelChild.style.backgroundImage = null;
+                selectedChoicePanelChild.style.backgroundImage = "none";
                 dishCard.style.visibility = "hidden";
                 dishCard.onclick = null;
             }
@@ -21,6 +22,8 @@ function onLoad() {
                 document.getElementById("dish-img").src = "asset/Rice.png";
             } else {
                 selectedIngredientId = choicePanelChild.id;
+                soundEffect.currentTime = 0;
+                soundEffect.play();
                 choicePanelChild.style.backgroundColor = "#ffbcb3";
                 choicePanelChild.style.backgroundImage = "url(asset/choice-bg-pattern.png)";
                 dishCard.style.visibility = "visible";
@@ -37,8 +40,10 @@ function onLoad() {
         };
     }
     document.getElementById("background").onclick = () => {
-        document.getElementById(selectedIngredientId).style.backgroundColor = "transparent";
+        const selectedChoicePanelChild = document.getElementById(selectedIngredientId);
+        selectedChoicePanelChild.style.backgroundColor = "transparent";
         dishCard.style.visibility = "hidden";
+        selectedChoicePanelChild.style.backgroundImage = "none";
         dishCard.onclick = null;
         document.getElementById("dish-img").src = "asset/Rice.png";
     };
