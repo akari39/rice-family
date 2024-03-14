@@ -19,7 +19,12 @@ function fillLineWithDot() {
         const existingTextWidth = rawExistingText.pxWidth(font);
         const dotWidth = ".".pxWidth(font);
         const numChars = Math.floor((parentWidth - existingTextWidth)/dotWidth);
-        line.innerText = '.'.repeat(numChars - 1);
+        const repeatCount = numChars - 1;
+        if (repeatCount < 0) {
+            line.innerText = '.'.repeat(10);
+            continue;
+        }
+        line.innerText = '.'.repeat(repeatCount);
     }
 }
 

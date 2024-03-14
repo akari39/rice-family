@@ -10,7 +10,9 @@ function onLoad() {
         const index = i;
         choicePanelChild.onclick = () => {
             if (selectedIngredientId !== null) {
-                document.getElementById(selectedIngredientId).style.backgroundColor = "transparent";
+                const selectedChoicePanelChild = document.getElementById(selectedIngredientId);
+                selectedChoicePanelChild.style.backgroundColor = "transparent";
+                selectedChoicePanelChild.style.backgroundImage = null;
                 dishCard.style.visibility = "hidden";
                 dishCard.onclick = null;
             }
@@ -19,7 +21,8 @@ function onLoad() {
                 document.getElementById("dish-img").src = "asset/Rice.png";
             } else {
                 selectedIngredientId = choicePanelChild.id;
-                choicePanelChild.style.backgroundColor = "white";
+                choicePanelChild.style.backgroundColor = "#ffbcb3";
+                choicePanelChild.style.backgroundImage = "url(asset/choice-bg-pattern.png)";
                 dishCard.style.visibility = "visible";
                 const dishName = dishes[index];
                 dishCard.innerText = dishName;

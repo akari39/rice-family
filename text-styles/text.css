@@ -204,7 +204,7 @@ html {
 .intro-img {
     width: 270px;
     height: 270px;
-    transform: rotate(2deg);
+    margin-left: 24px;
 }
 
 .material-symbols-outlined {
