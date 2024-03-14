@@ -29,8 +29,15 @@ function onLoad() {
                     location.href=`../text-pages/${dishNameWithoutSpaces}.html`;
                 };
             }
+            event.stopPropagation();
         };
     }
+    document.getElementById("background").onclick = () => {
+        document.getElementById(selectedIngredientId).style.backgroundColor = "transparent";
+        dishCard.style.visibility = "hidden";
+        dishCard.onclick = null;
+        document.getElementById("dish-img").src = "../asset/Rice.png";
+    };
 }
 
 window.onload = onLoad;
